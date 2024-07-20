@@ -7,6 +7,27 @@ In Terraform, the main.tf file serves as the starting point for implementing you
     The main.tf file contains the logic for defining and managing your infrastructure resources.
     It includes Terraform resources, but can also contain datasources and locals.
     
+# Configure the Azure provider
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0.2"
+    }
+  }
+  required_version = ">= 1.1.0"
+}
+
+provider "azurerm" {
+  features {}
+}
+
+
+resource "azurerm_resource_group" "rg" {
+  name     = "example-resources"
+  location = "southeast asia"
+}
+    
 
 REFERENCE:  https://developer.hashicorp.com/terraform
 
