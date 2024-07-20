@@ -8,6 +8,6 @@ In Terraform, the main.tf file serves as the starting point for implementing you
     It includes Terraform resources, but can also contain datasources and locals.
     
 
-**REFERENCE:**https://developer.hashicorp.com/terraform
+REFERENCE:https://developer.hashicorp.com/terraform
 
 
