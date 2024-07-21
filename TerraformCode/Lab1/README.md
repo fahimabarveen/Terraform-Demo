@@ -17,7 +17,7 @@ Certainly! Let me provide a simplified explanation of the steps you've outlined:
 
 4. **Format and Validate Configuration:**
    - Consistent formatting is essential for readability.
-   - Run `terraform fmt` to automatically format your configuration files.
+   - Run `terraform plan` to automatically format your configuration files.
 
 5. **Apply Your Terraform Configuration:**
    - Execute `terraform apply` to create the specified resources.
