@@ -1,5 +1,3 @@
-Certainly! Let me provide a simplified explanation of the steps you've outlined:
-
 1. **Create a Terraform Configuration File (main.tf):**
    - You've defined a Terraform configuration in a file named `main.tf`.
    - This configuration specifies that you're using the `azurerm` provider from HashiCorp.
