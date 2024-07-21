@@ -1,5 +1,3 @@
-Certainly! Let's break down Terraform variables and their usage:
-
 1. **Definition of Terraform Variables:**
    - **Terraform variables** act as placeholders in your Terraform configuration files.
    - They allow you to parameterize values, making your configurations more flexible and reusable.
