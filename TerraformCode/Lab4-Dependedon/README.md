@@ -28,3 +28,26 @@ output "resource_group_id" {
   value = azurerm_resource_group.rg.id
 }
 
+storage account in Terraform is managed using the azurerm_storage_account resource.
+It represents an Azure Storage Account where you can store various types of data (blobs, files, tables, queues, etc.).
+Example Usage:
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
+  location = "West Europe"
+}
+
+resource "azurerm_storage_account" "example" {
+  name                = "storageaccountname"
+  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.example.location
+  account_tier        = "Standard"
+  account_replication_type = "GRS"
+  tags = {
+    environment = "staging"
+  }
+}
+In this example:
+We create a resource group named “example-resources” in the “West Europe” region.
+Then, we define a storage account named “storageaccountname” within that resource group.
+The storage account has a standard tier and geo-redundant replication.
+We also add a tag to indicate the environment as “staging.”
