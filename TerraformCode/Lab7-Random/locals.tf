@@ -1,3 +1,4 @@
+
 locals {
   name                 = "example-rg"
   location             = "southeast asia"
