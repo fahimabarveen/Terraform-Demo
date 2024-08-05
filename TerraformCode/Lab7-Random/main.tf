@@ -1,4 +1,3 @@
-
 # Configure the Azure provider
 terraform {
   required_providers {
@@ -22,18 +21,13 @@ resource "random_string" "random" {
   length  = 4
   special = false
 }
-locals {
-  name                  = "example-rg"
-  location              = "southeast asia"  # or any preferred Azure region
-  storage_account_name  = "tflearn"
-}
 
 resource "azurerm_resource_group" "example" {
   name     = "${local.name}-${random_string.random.result}"
   location = local.location
 }
 
-resource "azurerm_storage_account" "stroageaccount" {
+resource "azurerm_storage_account" "storageaccount" {  # Corrected typo here
   name                     = "${local.storage_account_name}${random_string.random.result}"
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location

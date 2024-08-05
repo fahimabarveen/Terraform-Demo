@@ -1,6 +1,7 @@
 
 locals {
-  name                 = "example-rg"
-  location             = "southeast asia"
-  storage_account_name = "tflearn"
+  name                 = "example"
+  location             = "East US"
+  storage_account_name = "examplestoracc"
 }
+
