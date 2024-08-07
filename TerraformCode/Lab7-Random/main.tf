@@ -27,7 +27,7 @@ resource "azurerm_resource_group" "example" {
   location = local.location
 }
 
-resource "azurerm_storage_account" "storageaccount" {  # Corrected typo here
+resource "azurerm_storage_account" "storageaccount" {  
   name                     = "${local.storage_account_name}${random_string.random.result}"
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location

@@ -1,18 +1,18 @@
 variable "location" {
   description = "The region in which the resources will be deployed"
   type        = string
-  default     = "East US"
+  default     = "southeast asia"
 }
 variable "name" {
   description = "The name of the resource group"
   type        = string
-  default     = "example"
+  default     = "example-resources"
 }
 
 variable "storage_account_name" {
   description = "The name of the storage account"
   type        = string
-  default     = "examplestoracc"
+  default     = "tflearn2027"
 }
 
 
